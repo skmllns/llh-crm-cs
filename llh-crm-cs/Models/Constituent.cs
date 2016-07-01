@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace llh_crm_cs.Models
 {
     public class Constituent
     {
+        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int ConstituentID { get; set; }
 
         //use VM with this?
