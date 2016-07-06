@@ -1,0 +1,35 @@
+﻿@model llh_crm_cs.Models.Volunteer
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Volunteer</h4>
+	<hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.OccurenceID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OccurenceID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.VolunteerType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VolunteerType)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.VolunteerID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

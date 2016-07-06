@@ -22,5 +22,7 @@ namespace llh_crm_cs.DAL
         public DbSet<Occurence> Occurences { get; set; }
         public DbSet<Course> Courses { get; set; }
         public DbSet<Donation> Donations { get; set; }
+
+        public System.Data.Entity.DbSet<llh_crm_cs.Models.Affiliation> Affiliations { get; set; }
     }
 }
